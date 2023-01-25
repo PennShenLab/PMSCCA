@@ -17,7 +17,7 @@ This repository contains the implementation of PMSCCA in R with the files necess
 *"/Simulation.R"* is the file to execute. I recommend using RStudio as it helps install package dependencies recursively.
 
 *"/Simulated datasets/"* contains 
-- two datasets $X,Y$, whose canonical correlation is to be maximized;
+- two datasets $X,Y$, whose canonical correlation is to be maximized (target canonical correlation $\rho=0.3$);
 - two ground truth loading weight vectors $u,v$;
 - and an additional file in the folder, $C$, as the target joint covariance matrix, which is for reference only and should not contribute to the computation.
 
