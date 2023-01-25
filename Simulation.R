@@ -1,9 +1,6 @@
-  # --------------------------------------------------------------------
-  # PM-SPLS algorithm 
-  # --------------------------------------------------------------------
-  
   # Main file to execute for reproducing simulation studies. 
-  # Please revise the file directory as appropriate.
+  # Please change the file directory as appropriate.
+  # Author: Bao & Sha
   
 
 rm(list=ls())
@@ -64,11 +61,11 @@ n = 2500  # number of subjects
 p = 200 # number of X variables
 q = 100  # number of Y variables
 
-X = as.matrix(read.csv("C:\\Users\\shenl\\OneDrive\\Desktop\\0814 cov + vali jiaozheng\\simulated data\\xmixed.txt", header = FALSE))
-Y = as.matrix(read.csv("C:\\Users\\shenl\\OneDrive\\Desktop\\0814 cov + vali jiaozheng\\simulated data\\ymixed.txt", header = FALSE))
-C = as.matrix(read.csv("C:\\Users\\shenl\\OneDrive\\Desktop\\0814 cov + vali jiaozheng\\simulated data\\cmixed.txt", header = FALSE))
-Xvar_weight = as.matrix(read.csv("C:\\Users\\shenl\\OneDrive\\Desktop\\0814 cov + vali jiaozheng\\simulated data\\vmixed.txt", header = FALSE))
-Yvar_weight = as.matrix(read.csv("C:\\Users\\shenl\\OneDrive\\Desktop\\0814 cov + vali jiaozheng\\simulated data\\wmixed.txt", header = FALSE))
+X = as.matrix(read.csv("C:\\Users\\shenl\\Box\\cca notes\\xrho031.txt", header = FALSE))
+Y = as.matrix(read.csv("C:\\Users\\shenl\\Box\\cca notes\\yrho031.txt", header = FALSE))
+C = as.matrix(read.csv("C:\\Users\\shenl\\Box\\cca notes\\crho031.txt", header = FALSE))
+Xvar_weight = as.matrix(read.csv("C:\\Users\\shenl\\Box\\cca notes\\vrho031.txt", header = FALSE))
+Yvar_weight = as.matrix(read.csv("C:\\Users\\shenl\\Box\\cca notes\\wrho031.txt", header = FALSE))
 
 
 # # relevant genetic features
@@ -82,7 +79,7 @@ Yvar_weight = as.matrix(read.csv("C:\\Users\\shenl\\OneDrive\\Desktop\\0814 cov 
 # # IDX_Yvar_relevant = sort(datasample(1:q,NUM_Yvar_relevant,'Replace',false)) # location of relevant imaging features
 
 
-rho = 0.8 #0.375#0.8#0.25 # target canonical correlation coefficient
+#rho = 0.8 #0.375#0.8#0.25 # target canonical correlation coefficient !!!NOT ACTUALLY USED!!!
 IDX_Xvar_relevant_A = 31:50
 IDX_Xvar_relevant_B = 61:90
 IDX_Yvar_relevant_A = 21:30
