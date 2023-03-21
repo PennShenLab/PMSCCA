@@ -22,3 +22,7 @@ This repository contains the implementation of PMSCCA in R with the files necess
 - and an additional file in the folder, $C$, as the target joint covariance matrix, which is for reference only and should not contribute to the computation.
 
 *"/simulation/"* contains a sample set of results that this implementation should be expected to produce.
+
+## Acknowledgements
+
+This work was supported in part by the National Institutes of Health grants R01 LM013463, RF1 AG063481, RF1 AG068191, U01 AG066833 and U01 AG068057.
